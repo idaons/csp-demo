@@ -4,8 +4,59 @@
     <meta charset="UTF-8">
     <title>CSP - CSP - CSP</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+    <style integrity='sha256-1AEBufVZt2FioEw++D/tRmJhuJ1S/f9eBmgaVZR52Dg='>
+        p.uglyOrPretty{
+            color: #fa02b2;
+            max-width: 25rem;
+            font-family: initial;
+            font-weight: inherit;
+            font-size: inherit;
+            border: none;
+            background-color: transparent;
+        }
+        p.uglyOrPretty::after {
+            content: ': Fin<3'
+        }
+    </style>
 </head>
+
 <body>
-<h1 class="overskrift">agggruppemøte Content Security Policy </h1>
+
+<h1>Content Security Policy Playground</h1>
+<ol>
+    <li>
+        <p> Tillat å vise bilde av bestemorkatten fra ditt eget lokale repo, men blokkér den hackerkatten fra imgur.com. </p>
+        <img src="/grandmacat.jpg" class="catImage" alt=" Ånei, bestemor er blokkert  &#128543;"/>
+        <br/>
+        <img src="https://i.imgur.com/xpqgA9z.jpg" class="catImage" alt=" Riktig, ikke vis katten fra imgur"/>
+    </li>
+    <li class="styling">
+        <p>Tillat styling fra eget repo.</p>
+        <p>Ingen styling å se, det må vi fikse!</p>
+    </li>
+    <li>
+        <p>Tillat å kjøre egen javascript fra index.js</p>
+        <p id="insertfromscript">Kan ikke se noe som kjører..</p>
+    </li>
+    <li>
+        <p>Her skal du fetche en pokemon! (Navn og bilde)</p>
+        <p id="pokemonname">Navnet er blokkert &#128543;</p>
+        <img id="pokemonimg" alt=" Her skulle det vært et bilde"/>
+    </li>
+    <li>
+        <p class="googleFont">Denne teksten skal ha en annen font (hentet fra google fonts), tillat den i CSP'en </p>
+    </li>
+    <li>
+        <p>Tillat å vise videoen under</p>
+        <!––<iframe width="420" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1" allow='autoplay'></iframe>––>
+    </li>
+    <li>
+        <p>Under vises en paragraf med stygg styling fra styles.css. Bruk styleSrc med sha-256 i CSP'en din, for å tillatte inline-stylingen fra html så teksten blir fin</p>
+        <p class="uglyOrPretty">Denne teksten kan bli fin eller stygg</p>
+    </li>
+</ol>
+
+<script src="./index.js"></script>
 </body>
 </html>
