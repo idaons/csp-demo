@@ -13,10 +13,7 @@ fetch('https://ironhack-pokeapi.herokuapp.com/pokemon/' + randomnr)
     });
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 00e4226092e661c4c3dd9ac9c9b50359f4f60dba
 function loop() {
     var s = '',
         e = ['🤓', '😚', '😘'],

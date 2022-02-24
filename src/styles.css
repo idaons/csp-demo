@@ -7,10 +7,7 @@ body {
 
 img, iframe {
     height: 14rem;
-<<<<<<< HEAD
     margin-bottom: 1rem;
-=======
->>>>>>> 00e4226092e661c4c3dd9ac9c9b50359f4f60dba
 }
 
 ol li {
@@ -18,7 +15,6 @@ ol li {
 }
 
 .googleFont {
-<<<<<<< HEAD
     font-family: 'VT323', sans-serif;
 }
 
@@ -48,17 +44,3 @@ ol li {
 .uglyOrPretty::after {
     content: ': stygg'
 }
-=======
-    font-family: 'VT323', Arial;
-    font-size: 2rem;
-}
-
-.styling::before {
-    content: 'Denne stylingen tok seg bra ut!';
-}
-
-.styling p {
-    display: none;
-}
-
->>>>>>> 00e4226092e661c4c3dd9ac9c9b50359f4f60dba
