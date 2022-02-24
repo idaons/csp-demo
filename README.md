@@ -20,5 +20,5 @@ Default CSP ligger i server.js og foreløpig blokkerer den alt av input.
 Oppgavene går ut på å tillate/forby diverseting ved å modifisere CSP'en. 
 
 Se hva du kan gjøre med CSP feks her:
-https://scotthelme.co.uk/csp-cheat-sheet/
+https://content-security-policy.com/
 
